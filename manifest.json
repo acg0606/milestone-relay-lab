@@ -1,0 +1,176 @@
+{
+  "version": "0.3.0",
+  "scope": "PUBLIC_REVIEW_SOURCE",
+  "secretPatternMatches": 0,
+  "excluded": [
+    ".git",
+    ".github",
+    "scripts",
+    ".env",
+    "credentials",
+    "repository-history",
+    "local-machine-paths"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "cdc3a3dc514edc9175ffe99e9d75958ac45f4efd5109137eb4ff278bfa59c97b"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 20145,
+      "sha256": "c9e0978dd13530ca418bb8fab67d493e57b59aba2665d24518fb0d246fc83cb3"
+    },
+    {
+      "path": "src/capability.cjs",
+      "bytes": 3556,
+      "sha256": "7e280f0630ad006b7f7134dcf27f61320084e6451017df1d86531d0bd69acb6e"
+    },
+    {
+      "path": "src/escrow-core.js",
+      "bytes": 17899,
+      "sha256": "9a84926e3e1cf65d3526959070b5df4bedf72a15b93f82395785fea95a8df89d"
+    },
+    {
+      "path": "src/scenarios.js",
+      "bytes": 5567,
+      "sha256": "d005d232ba65d91576ff9ca31e664a0360f144ff0356173a755dac0f04e012e3"
+    },
+    {
+      "path": "src/proof-admission.cjs",
+      "bytes": 8261,
+      "sha256": "a74d3fa0bb8811b30f94710936e47dd72566a4da8ec0e2c3a13931e80c4105f2"
+    },
+    {
+      "path": "test/capability.test.cjs",
+      "bytes": 2262,
+      "sha256": "7b215b35f6da770093c6a020b8e79e49e5b8c8b6ca23a4758152d8afa5c1ca4c"
+    },
+    {
+      "path": "test/sdk-offline.test.cjs",
+      "bytes": 946,
+      "sha256": "f1f9063985a7ca5fcbbeef33532748f73ff8a7edf800dd690986dad73d2453dc"
+    },
+    {
+      "path": "test/escrow-core.test.cjs",
+      "bytes": 7440,
+      "sha256": "61c5a97c5ec3dc472a2dc062cd67a78867eb0d99e5c48b6b88237912415beecf"
+    },
+    {
+      "path": "test/proof-admission.test.cjs",
+      "bytes": 3419,
+      "sha256": "da84e120b0cdff35eadcbcd722e0539ff8bfd96e2a63dfeda4f09b682be717f5"
+    },
+    {
+      "path": "evidence/offline-replay-receipts-v02.json",
+      "bytes": 1432,
+      "sha256": "cc83dd271d2fba2a73412534d755103f7f1db054f387b840d314c10c41136f61"
+    },
+    {
+      "path": "evidence/attestcoin-read-only-receipt-2026-09-06.json",
+      "bytes": 3393,
+      "sha256": "97bcfea9026d0938be444db130af3ef7cd8eeff3cdda98bc06484da4ed2e1128"
+    },
+    {
+      "path": "evidence/attestcoin-read-only-proof-2026-09-06.json",
+      "bytes": 4096,
+      "sha256": "5981c27f5abc755e1737b83ecb545fc7cf78241f573601195d35b232a44d3a09"
+    },
+    {
+      "path": "evidence/public-benchmark-policy.json",
+      "bytes": 565,
+      "sha256": "945022c63b172f8f73ff69dfd30b3711279a70d9fa3cfac795999142387df4ce"
+    },
+    {
+      "path": "docs/attestcoin-verification-2026-09-06.md",
+      "bytes": 5416,
+      "sha256": "e230cdd6963d8de06fc1064b029e5bffa3a390f9eb6345c777c1bde010b59eda"
+    },
+    {
+      "path": "docs/registry-testnet-handoff.md",
+      "bytes": 5330,
+      "sha256": "50c642d267ec686f22de920d00e58e651ff3de3d2c3f110444f10f951e14852e"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 7833,
+      "sha256": "bb24ca9f5ec4b479c2d5aa67acb0bebb97c9e7d1f455814aca87154ab9737f82"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 15283,
+      "sha256": "67bbbcb453d89464aa60a18ab49d9f8fdbe427578a5d3134cb9b39a025540263"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 8018,
+      "sha256": "e2eab90ad2d535f9a3a8c08b2c3243bdc547b9f87e5a52962c3a36f5ae842cb6"
+    },
+    {
+      "path": "contracts/MilestoneEvidenceRegistry.sol",
+      "bytes": 4012,
+      "sha256": "367e6673c885f7ae946f897762940627adef989b8f46efa81073741f3c25620b"
+    },
+    {
+      "path": "contracts/test/MockAttestcoinVerifier.sol",
+      "bytes": 538,
+      "sha256": "9c5bc1c8eeab17a64a2f05f0ee043f13c32cab196b97506a26d990e751a1a6e3"
+    },
+    {
+      "path": "src/compile-contract.cjs",
+      "bytes": 1140,
+      "sha256": "5c8a4f69e593fcfe6ac36561fda4ab4bc00508cf211bfdea0a38409d240015b5"
+    },
+    {
+      "path": "test/registry-contract.test.cjs",
+      "bytes": 5962,
+      "sha256": "e529861d7c62d7a44be7231848b40d8233ed901f221f2022d90a796419a58ff7"
+    },
+    {
+      "path": "evidence/registry-local-evm-2026-09-06.json",
+      "bytes": 971,
+      "sha256": "91b36c103ff1dc7d71a63db82dc0031caf262a8fc5cc09f439ca0603d1d543c2"
+    },
+    {
+      "path": "evidence/registry-testnet-unsigned-plan-2026-09-06.json",
+      "bytes": 11707,
+      "sha256": "6284c6d3fe58d8aa2a6c3d52ce476f78115929b1750ab01b93ee4345b7257c2a"
+    },
+    {
+      "path": "output/contracts/MilestoneEvidenceRegistry.json",
+      "bytes": 17251,
+      "sha256": "15220542e5f55cea02a5be26d1e9c5749c32eb11c803032204dbf5b14452a49d"
+    },
+    {
+      "path": "output/contracts/solc-input.json",
+      "bytes": 5155,
+      "sha256": "caf9530284c2aa968d7b7313ad12b0e553e6ca63d8ca2f60a8f37e3ba227248f"
+    },
+    {
+      "path": "package.json",
+      "bytes": 844,
+      "sha256": "87a81cf2bebefacdc09fecd7ee00b1dd65510048396ece115166fd53386d0c55"
+    },
+    {
+      "path": "verify.cjs",
+      "bytes": 961,
+      "sha256": "567f5c5b68bc57b03922d046469df91521134bdec73e8ff88eceb4fa0776f098"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2542,
+      "sha256": "d100c3a99d590258e6e026467c76031af204dd3653193d14b193f03e0997701e"
+    },
+    {
+      "path": "compile.cjs",
+      "bytes": 948,
+      "sha256": "b172c5dbcda1c1e9cf05f87f9762704a8224ba329d7c01c1a28f953d7c8f068f"
+    },
+    {
+      "path": "prepare-testnet-plan.cjs",
+      "bytes": 4373,
+      "sha256": "82627292fd9f595883eea75854f5b66faeb26c1d4eb53fe3241c471a84f405ed"
+    }
+  ]
+}

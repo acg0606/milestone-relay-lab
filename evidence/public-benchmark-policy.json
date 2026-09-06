@@ -1,0 +1,9 @@
+{
+  "purpose": "PUBLIC_TRANSACTION_BENCHMARK",
+  "sourceChainId": 11155111,
+  "sourceChainKey": 1,
+  "transactionHash": "0x94971d0d11d401a8868118d5735db920095833b66c4f588e810171329c6abb4c",
+  "expectedSender": "0x6Cc9397c3B38739daCbfaA68EaD5F5D77Ba5F455",
+  "expectedRecipient": "0x82519695E83f2e3FB734b4EacAd8cc248F692308",
+  "selection": "First public transaction returned in already-attested Sepolia block 11649780. Neither address belongs to this project by assertion. This is an integration benchmark, not evidence that any project milestone was completed."
+}

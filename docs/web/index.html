@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#07110f">
+  <meta name="description" content="Private offline replay lab for a Cross-Chain Milestone Escrow concept. No wallet, RPC, contract, signature or transaction capability.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2311d89b'/%3E%3Cpath d='M8 17h16M16 9v16' stroke='%2307110f' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <title>Milestone Relay Lab · Offline Replay</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to replay controls</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#main" aria-label="Milestone Relay Lab home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>Milestone Relay</strong><small>Private concept lab</small></span>
+    </a>
+    <div class="boundary-pill" data-testid="boundary-pill">
+      <span class="pulse" aria-hidden="true"></span>
+      Offline only · 0 external calls
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">BUIDL CTC 2026 FALL · CONCEPT INCREMENT 0.2</p>
+        <h1 id="page-title">Cross-Chain<br><em>Milestone Escrow</em></h1>
+        <p class="lede">Explore how evidence could trigger a release, dispute or refund through a deterministic state machine. Every balance, event and decision here is a synthetic fixture.</p>
+        <div class="hero-badges" aria-label="Prototype boundaries">
+          <span>REPLAY MODE</span>
+          <span>SIMULATED UNITS</span>
+          <span>NO ON-CHAIN CLAIM</span>
+        </div>
+      </div>
+      <aside class="trust-card" aria-labelledby="trust-title">
+        <p class="card-kicker">Execution boundary</p>
+        <h2 id="trust-title">Safe by inability</h2>
+        <p>This build cannot connect a wallet, call an RPC, deploy a contract, create a signature or submit a transaction.</p>
+        <dl>
+          <div><dt>Engine</dt><dd>Pure local reducer</dd></div>
+          <div><dt>Provenance</dt><dd>REPLAY synthetic fixture</dd></div>
+          <div><dt>Value moved</dt><dd>0 real assets</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="lab-shell" aria-labelledby="lab-title">
+      <div class="lab-heading">
+        <div>
+          <p class="section-index">01 / SELECT A BRANCH</p>
+          <h2 id="lab-title">Replay the decision path</h2>
+        </div>
+        <p id="scenario-description" class="scenario-description"></p>
+      </div>
+
+      <div class="scenario-tabs" role="group" aria-label="Replay scenarios">
+        <button class="scenario-button" type="button" data-scenario="release" aria-pressed="true">
+          <span class="scenario-number">01</span>
+          <span><strong>Verified release</strong><small>Approve → release</small></span>
+        </button>
+        <button class="scenario-button" type="button" data-scenario="dispute" aria-pressed="false">
+          <span class="scenario-number">02</span>
+          <span><strong>Dispute & refund</strong><small>Reject → resolve</small></span>
+        </button>
+        <button class="scenario-button" type="button" data-scenario="timeout" aria-pressed="false">
+          <span class="scenario-number">03</span>
+          <span><strong>Timeout & refund</strong><small>Expire → resolve</small></span>
+        </button>
+      </div>
+
+      <div class="status-ribbon" aria-label="Current replay state">
+        <div class="status-primary">
+          <span class="status-light" aria-hidden="true"></span>
+          <div><small>Current state</small><strong id="escrow-status">UNINITIALIZED</strong></div>
+        </div>
+        <div><small>Balance</small><strong><span id="balance-units">0</span> u</strong></div>
+        <div><small>Released</small><strong><span id="released-units">0</span> u</strong></div>
+        <div><small>Refunded</small><strong><span id="refunded-units">0</span> u</strong></div>
+        <div><small>Processed</small><strong><span id="event-progress">0 / 0</span></strong></div>
+      </div>
+
+      <div class="workspace-grid">
+        <section class="event-panel" aria-labelledby="event-title">
+          <div class="panel-heading">
+            <div><p class="section-index">02 / EVENT SPINE</p><h3 id="event-title">Deterministic trace</h3></div>
+            <span id="mode-chip" class="mode-chip">REPLAY</span>
+          </div>
+          <ol id="event-list" class="event-list" aria-label="Scenario event sequence"></ol>
+          <div class="replay-controls">
+            <button id="reset-replay" class="button button-ghost" type="button">Reset</button>
+            <button id="step-replay" class="button button-secondary" type="button">Step forward</button>
+            <button id="run-all" class="button button-primary" type="button">Run entire replay</button>
+          </div>
+          <p id="replay-announcer" class="sr-only" aria-live="polite"></p>
+        </section>
+
+        <section class="milestone-panel" aria-labelledby="milestone-title">
+          <div class="panel-heading">
+            <div><p class="section-index">03 / VALUE CONDITIONS</p><h3 id="milestone-title">Milestones</h3></div>
+            <span class="unit-label">u = simulated unit</span>
+          </div>
+          <div id="milestone-list" class="milestone-list"></div>
+          <div class="conservation-card">
+            <div class="conservation-heading"><span>Ledger conservation</span><strong id="conservation-status">WAITING</strong></div>
+            <div class="equation"><span>balance</span><b>+</b><span>released</span><b>+</b><span>refunded</span><b>=</b><span>budget</span></div>
+            <p id="conservation-detail">Create and fund the fixture to activate the invariant.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="receipt-section" aria-labelledby="receipt-title">
+      <div class="receipt-copy">
+        <p class="section-index">04 / AUDITABLE OUTPUT</p>
+        <h2 id="receipt-title">A receipt that says what did <em>not</em> happen.</h2>
+        <p>The fingerprint identifies this ordered local trace. It is not a transaction hash, blockchain proof or signature.</p>
+      </div>
+      <div class="receipt-card">
+        <dl>
+          <div><dt>Trace fingerprint</dt><dd id="trace-fingerprint">trace-fnv1a64:cbf29ce484222325</dd></div>
+          <div><dt>External calls</dt><dd id="external-call-count">0</dd></div>
+          <div><dt>Wallet / RPC</dt><dd>Not available</dd></div>
+          <div><dt>Transaction submitted</dt><dd>False</dd></div>
+          <div><dt>Real funds moved</dt><dd>False</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="future-gate" aria-labelledby="future-title">
+      <div class="gate-icon" aria-hidden="true">G</div>
+      <div><p class="section-index">HUMAN GATE REQUIRED</p><h2 id="future-title">Future testnet integration stays locked</h2></div>
+      <p>A dedicated empty testnet wallet, confirmed official addresses, source-chain support, faucet assets and explicit owner approval are prerequisites. This replay does none of those actions.</p>
+    </section>
+  </main>
+
+  <footer><span>Milestone Relay Lab · v0.2.0</span><span>Private · Offline · Evidence-aware</span></footer>
+
+  <script src="../src/escrow-core.js"></script>
+  <script src="../src/scenarios.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

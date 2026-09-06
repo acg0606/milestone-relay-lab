@@ -1,0 +1,97 @@
+{
+  "version": "0.3.0",
+  "publicationPerformed": false,
+  "submissionPerformed": false,
+  "files": [
+    {
+      "path": "web/index.html",
+      "bytes": 7827,
+      "sha256": "14d4591ebec595f9f5fea2a3c3d224fbe572a3ac6532b619184065f9b099998b"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 15283,
+      "sha256": "67bbbcb453d89464aa60a18ab49d9f8fdbe427578a5d3134cb9b39a025540263"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 8018,
+      "sha256": "e2eab90ad2d535f9a3a8c08b2c3243bdc547b9f87e5a52962c3a36f5ae842cb6"
+    },
+    {
+      "path": "src/escrow-core.js",
+      "bytes": 17899,
+      "sha256": "9a84926e3e1cf65d3526959070b5df4bedf72a15b93f82395785fea95a8df89d"
+    },
+    {
+      "path": "src/scenarios.js",
+      "bytes": 5567,
+      "sha256": "d005d232ba65d91576ff9ca31e664a0360f144ff0356173a755dac0f04e012e3"
+    },
+    {
+      "path": "evidence/attestcoin-read-only-receipt-2026-09-06.json",
+      "bytes": 3393,
+      "sha256": "97bcfea9026d0938be444db130af3ef7cd8eeff3cdda98bc06484da4ed2e1128"
+    },
+    {
+      "path": "evidence/attestcoin-read-only-proof-2026-09-06.json",
+      "bytes": 4096,
+      "sha256": "5981c27f5abc755e1737b83ecb545fc7cf78241f573601195d35b232a44d3a09"
+    },
+    {
+      "path": "evidence/public-benchmark-policy.json",
+      "bytes": 565,
+      "sha256": "945022c63b172f8f73ff69dfd30b3711279a70d9fa3cfac795999142387df4ce"
+    },
+    {
+      "path": "docs/attestcoin-verification-2026-09-06.md",
+      "bytes": 5416,
+      "sha256": "e230cdd6963d8de06fc1064b029e5bffa3a390f9eb6345c777c1bde010b59eda"
+    },
+    {
+      "path": "docs/registry-testnet-handoff.md",
+      "bytes": 5338,
+      "sha256": "1c658a6d288aa3f3b9a619a55635786cdc29ea74a7971d509d5c70aadd9fad16"
+    },
+    {
+      "path": "evidence/registry-local-evm-2026-09-06.json",
+      "bytes": 971,
+      "sha256": "91b36c103ff1dc7d71a63db82dc0031caf262a8fc5cc09f439ca0603d1d543c2"
+    },
+    {
+      "path": "evidence/registry-testnet-unsigned-plan-2026-09-06.json",
+      "bytes": 11707,
+      "sha256": "6284c6d3fe58d8aa2a6c3d52ce476f78115929b1750ab01b93ee4345b7257c2a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "cdc3a3dc514edc9175ffe99e9d75958ac45f4efd5109137eb4ff278bfa59c97b"
+    },
+    {
+      "path": "milestone-relay-whitepaper.pdf",
+      "bytes": 8624,
+      "sha256": "2e072761a9d70d75121a356002f07a999e2ff4fe80481ad3c774fcd27b54bc70"
+    },
+    {
+      "path": "milestone-relay-demo.webm",
+      "bytes": 3379340,
+      "sha256": "e21b4dabf4392614bf472a82ebc0a9d8b75b02a220e776d2ce57cc74bce45427"
+    },
+    {
+      "path": "milestone-relay-source.zip",
+      "bytes": 64704,
+      "sha256": "147a85d3c4e32690c95d86cfe37cbaaa30b28a9c7d4290835ce893716cf2b8d7"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4438,
+      "sha256": "c0dae90968074aaf5d183376b19f68780e40a64e81fede5181b6db0b70d1a817"
+    },
+    {
+      "path": "release.css",
+      "bytes": 2459,
+      "sha256": "2d37018b6ed6a3a74229f42e7493b061f35660ddaa8ec639808592947383bde9"
+    }
+  ]
+}

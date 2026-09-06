@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "verifiedOn": "2026-08-23",
+  "verification": "LOCAL_OFFLINE_DETERMINISTIC_REPLAY",
+  "scenarios": [
+    {
+      "id": "release",
+      "status": "SETTLED",
+      "eventCount": 8,
+      "traceFingerprint": "trace-fnv1a64:ede64b53c018d572",
+      "ledger": {
+        "budgetUnits": 1000,
+        "simulatedBalanceUnits": 0,
+        "releasedUnits": 1000,
+        "refundedUnits": 0
+      }
+    },
+    {
+      "id": "dispute",
+      "status": "REFUNDED",
+      "eventCount": 7,
+      "traceFingerprint": "trace-fnv1a64:07f98ab00da1d410",
+      "ledger": {
+        "budgetUnits": 1000,
+        "simulatedBalanceUnits": 0,
+        "releasedUnits": 0,
+        "refundedUnits": 1000
+      }
+    },
+    {
+      "id": "timeout",
+      "status": "REFUNDED",
+      "eventCount": 6,
+      "traceFingerprint": "trace-fnv1a64:516113e8cd240fc9",
+      "ledger": {
+        "budgetUnits": 1000,
+        "simulatedBalanceUnits": 0,
+        "releasedUnits": 0,
+        "refundedUnits": 1000
+      }
+    }
+  ],
+  "safetyBoundary": {
+    "externalCalls": 0,
+    "walletCreated": false,
+    "walletConnected": false,
+    "rpcUsed": false,
+    "contractDeployed": false,
+    "signatureCreated": false,
+    "transactionSubmitted": false,
+    "realValueMoved": false
+  },
+  "claims": {
+    "realEscrowCreated": false,
+    "realFundsLocked": false,
+    "crossChainProofGenerated": false,
+    "onChainReleasePerformed": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS_LOCAL_EVM",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "evmVersion": "paris",
+  "verifier": "MOCK_AT_OFFICIAL_ADDRESS",
+  "realPrecompileExecuted": false,
+  "externalCalls": 0,
+  "publicDeployment": false,
+  "actualNetworkWalletCreated": false,
+  "localSyntheticAccounts": 2,
+  "checks": 16,
+  "gas": {
+    "deploy": "562970",
+    "configure": "69274",
+    "verifyWithMock": "79384"
+  },
+  "covered": [
+    "unknown milestone",
+    "unauthorized policy",
+    "invalid policy",
+    "immutable policy",
+    "wrong source chain",
+    "wrong height",
+    "wrong bytes",
+    "native false",
+    "native revert",
+    "no mutation on failure",
+    "verified storage",
+    "event and relayer",
+    "same milestone replay",
+    "cross-milestone replay",
+    "fresh-client persistent storage",
+    "reject value transfer"
+  ],
+  "limit": "Mock validates application behavior only; real precompile receipt is a separate read-only observation."
+}

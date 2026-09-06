@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-09-06T21:30:04.096Z",
+  "observedAt": "2026-09-06T21:30:05.961Z",
+  "provenance": "LIVE_READ_ONLY_TESTNET_VERIFICATION",
+  "status": "PASS",
+  "source": {
+    "chainId": 11155111,
+    "chainKey": 1,
+    "transactionHash": "0x94971d0d11d401a8868118d5735db920095833b66c4f588e810171329c6abb4c",
+    "blockNumber": 11649780,
+    "blockHash": "0x8a6011a92862afe8ecaa58fcb0c7f0f67c52333e9127c0604df32eebb186f506",
+    "sender": "0x6Cc9397c3B38739daCbfaA68EaD5F5D77Ba5F455",
+    "recipient": "0x82519695E83f2e3FB734b4EacAd8cc248F692308",
+    "transactionStatus": 1,
+    "explorer": "https://sepolia.etherscan.io/tx/0x94971d0d11d401a8868118d5735db920095833b66c4f588e810171329c6abb4c"
+  },
+  "destination": {
+    "chainId": 102031,
+    "observedBlock": 5442683,
+    "precompile": "0x0000000000000000000000000000000000000FD2",
+    "rpc": "https://rpc.cc3-testnet.creditcoin.network",
+    "callMethod": "eth_call",
+    "transactionHash": null
+  },
+  "proof": {
+    "officialSdk": "@gluwa/usc-sdk@0.18.0",
+    "service": "https://prover.cc3-testnet.creditcoin.network",
+    "verified": true,
+    "bytesDigest": "0x859a10428e0a6d4d9a69deb1931c3da10b58bede62afeb363ae8607be1dec997",
+    "sourceReencodingMatches": true,
+    "attestedThrough": 11649810
+  },
+  "admission": {
+    "status": "PUBLIC_EVIDENCE_VERIFIED",
+    "evidenceId": "sepolia:0x94971d0d11d401a8868118d5735db920095833b66c4f588e810171329c6abb4c",
+    "fundsReleased": false,
+    "scope": "Local admission of a public transaction benchmark; not milestone completion or escrow authorization.",
+    "deduplicationScope": "CURRENT_PROCESS_ONLY"
+  },
+  "negativeChecks": {
+    "tamperedProof": "REJECTED_PRECOMPILE_REVERT",
+    "duplicateEvidence": "REJECTED_LOCAL"
+  },
+  "rpcCalls": [
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_call"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_chainId"
+    },
+    {
+      "host": "ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getTransactionByHash"
+    },
+    {
+      "host": "ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_chainId"
+    },
+    {
+      "host": "ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_getTransactionReceipt"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_blockNumber"
+    },
+    {
+      "host": "ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_chainId"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_call"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_chainId"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_call"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_chainId"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_call"
+    },
+    {
+      "host": "rpc.cc3-testnet.creditcoin.network",
+      "method": "eth_chainId"
+    }
+  ],
+  "boundary": {
+    "walletUsed": false,
+    "signatureCreated": false,
+    "transactionSubmitted": false,
+    "externalStateMutation": false,
+    "contractDeployed": false,
+    "assetsMoved": false,
+    "sourceTransactionCreatedByProject": false,
+    "projectMilestoneCompletionProven": false,
+    "mandatoryHackathonIntegrationSatisfied": false
+  }
+}
