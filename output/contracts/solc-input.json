@@ -1,0 +1,28 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/MilestoneEvidenceRegistry.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.36;\n\n/// @dev Signature and structs match the official @gluwa/usc-sdk verifier ABI.\ninterface IAttestcoinVerifier {\n    struct Sibling { bytes32 hash; bool isLeft; }\n    struct MerkleProof { bytes32 root; Sibling[] siblings; }\n    struct ContinuityProof { bytes32 lowerEndpointDigest; bytes32[] roots; }\n    function verify(uint64 chainKey, uint64 height, bytes calldata transactionBytes,\n        MerkleProof calldata merkleProof, ContinuityProof calldata continuityProof) external view returns (bool);\n}\n\n/// @notice Records inclusion of exact owner-selected source evidence. No payable operations.\n/// @dev VERIFIED means inclusion verified; it does not mean work quality or settlement.\ncontract MilestoneEvidenceRegistry {\n    address public constant VERIFIER = 0x0000000000000000000000000000000000000FD2;\n    uint256 public constant DESTINATION_CHAIN_ID = 102031;\n    uint64 public constant SOURCE_CHAIN_KEY = 1; // Sepolia on CC3 Testnet\n    address public immutable owner;\n\n    struct Milestone {\n        bytes32 expectedBytesHash;\n        uint64 sourceHeight;\n        bool configured;\n        bool verified;\n    }\n    mapping(bytes32 => Milestone) public milestones;\n    mapping(bytes32 => bool) public consumedEvidence;\n\n    error WrongDestinationChain();\n    error OwnerOnly();\n    error InvalidPolicy();\n    error PolicyAlreadyConfigured();\n    error MilestoneNotConfigured();\n    error MilestoneAlreadyVerified();\n    error SourceBindingMismatch();\n    error EvidenceAlreadyConsumed();\n    error NativeProofRejected();\n\n    event MilestoneConfigured(bytes32 indexed milestoneId, uint64 sourceHeight, bytes32 expectedBytesHash);\n    event EvidenceVerified(bytes32 indexed milestoneId, bytes32 indexed evidenceKey, address indexed relayer,\n        uint64 sourceHeight, bytes32 transactionBytesHash);\n\n    constructor() {\n        if (block.chainid != DESTINATION_CHAIN_ID) revert WrongDestinationChain();\n        owner = msg.sender;\n    }\n\n    /// @notice Owner commits the exact source bytes and height before proof admission.\n    /// @dev Immutable policy; callers must inspect what the committed source bytes mean.\n    function configureMilestone(bytes32 milestoneId, uint64 sourceHeight, bytes32 expectedBytesHash) external {\n        if (msg.sender != owner) revert OwnerOnly();\n        if (milestoneId == bytes32(0) || sourceHeight == 0 || expectedBytesHash == bytes32(0)) revert InvalidPolicy();\n        if (milestones[milestoneId].configured) revert PolicyAlreadyConfigured();\n        milestones[milestoneId] = Milestone(expectedBytesHash, sourceHeight, true, false);\n        emit MilestoneConfigured(milestoneId, sourceHeight, expectedBytesHash);\n    }\n\n    /// @notice Anyone may relay the exact proof; only the native verifier authorizes state change.\n    function verifyMilestone(bytes32 milestoneId, uint64 chainKey, uint64 sourceHeight,\n        bytes calldata transactionBytes, IAttestcoinVerifier.MerkleProof calldata merkleProof,\n        IAttestcoinVerifier.ContinuityProof calldata continuityProof) external {\n        Milestone storage milestone = milestones[milestoneId];\n        if (!milestone.configured) revert MilestoneNotConfigured();\n        if (milestone.verified) revert MilestoneAlreadyVerified();\n        bytes32 bytesHash = keccak256(transactionBytes);\n        if (chainKey != SOURCE_CHAIN_KEY || sourceHeight != milestone.sourceHeight || bytesHash != milestone.expectedBytesHash)\n            revert SourceBindingMismatch();\n        bytes32 evidenceKey = keccak256(abi.encode(chainKey, bytesHash));\n        if (consumedEvidence[evidenceKey]) revert EvidenceAlreadyConsumed();\n        if (!IAttestcoinVerifier(VERIFIER).verify(chainKey, sourceHeight, transactionBytes, merkleProof, continuityProof))\n            revert NativeProofRejected();\n        consumedEvidence[evidenceKey] = true;\n        milestone.verified = true;\n        emit EvidenceVerified(milestoneId, evidenceKey, msg.sender, sourceHeight, bytesHash);\n    }\n}\n"
+    },
+    "contracts/test/MockAttestcoinVerifier.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.36;\nimport '../MilestoneEvidenceRegistry.sol';\n\n/// @dev Local-EVM-only stand-in. Never deployed to a public network.\ncontract MockAttestcoinVerifier is IAttestcoinVerifier {\n    uint256 public mode;\n    function setMode(uint256 value) external { mode = value; }\n    function verify(uint64, uint64, bytes calldata, MerkleProof calldata, ContinuityProof calldata)\n        external view returns (bool) {\n        require(mode != 2, 'MOCK_INVALID_PROOF');\n        return mode == 1;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode.object",
+          "evm.deployedBytecode.object",
+          "evm.gasEstimates"
+        ]
+      }
+    }
+  }
+}
