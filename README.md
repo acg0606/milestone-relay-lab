@@ -4,6 +4,14 @@ This export contains the implementation, tests and evidence needed to reproduce
 a real read-only Attestcoin testnet proof verification and the separate escrow
 model. It excludes repository history, account configuration and private scripts.
 
+## Live testnet deployment
+
+Registry: 0x194075d28FedC34D53F095Bac0581368021cfD9a on CC3 Testnet (102031).
+Deployment, commitment and native proof admission confirmed on September 7, 2026.
+
+Public inspector: https://acg0606.github.io/milestone-relay-lab/web/registry.html
+Technical execution report: [docs/registry-testnet-completion.md](docs/registry-testnet-completion.md)
+
 ## Run
 
 Install Node.js 22 or newer and pnpm 11.19.0, then run:
@@ -12,6 +20,7 @@ Install Node.js 22 or newer and pnpm 11.19.0, then run:
 pnpm install --frozen-lockfile
 pnpm check
 pnpm test
+pnpm verify:registry
 pnpm verify:attestcoin
 ```
 
@@ -30,9 +39,8 @@ service causes a failure; a fixture never substitutes for network verification.
 
 The transaction is an existing public benchmark, unrelated to project work.
 It does not establish address ownership or milestone completion. Escrow
-release/dispute/refund logic remains a synthetic local model. No project
-contract deployment, destination transaction or assets movement occurred.
-The registry MVP awaits public testnet deployment and real persistent-state evidence. Financial settlement is outside its scope.
+release/dispute/refund logic remains a synthetic local model. Three zero-value testnet transactions deployed, configured and verified the registry.
+The independent public reader confirms exact deployed source, receipts, events, VERIFIED storage and replay rejection. Financial settlement is outside its scope.
 
 The HTML/CSS/JS in web/ are the preserved replay UI. The product demo and
 whitepaper are distributed separately with the static review site.
@@ -54,4 +62,5 @@ commits an owner-selected source digest and height, invokes the native verifier
 and persists VERIFIED with global replay protection. Compile with
 `pnpm compile:contract`; its local EVM tests use a mock, never a live network.
 The unsigned planner is disabled by default and cannot sign or broadcast.
-See docs/registry-testnet-handoff.md for exact next actions and limitations.
+See docs/registry-testnet-completion.md for confirmed transactions and limitations.
+The September 6 handoff is historical and is superseded by the September 7 completion record.

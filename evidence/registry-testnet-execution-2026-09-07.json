@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "chainId": 102031,
+  "rpc": "https://rpc.cc3-testnet.creditcoin.network",
+  "explorer": "https://creditcoin-testnet.blockscout.com",
+  "owner": "0x6bF287a1f9D312120FF6BcFCC36442933610Cbe6",
+  "createdAt": "2026-09-07T19:55:19.148Z",
+  "transactions": {
+    "deploy": {
+      "hash": "0xee75cffb1e55243487b46c75c667bb46f51831ec004962917ba1e42a15d85812",
+      "status": "CONFIRMED",
+      "preparedAt": "2026-09-07T19:55:20.818Z",
+      "nonce": 0,
+      "to": null,
+      "dataHash": "0x2f981b359e41d0d745c19172db72a080e0074f32a57c5a7c173901e6732b7ea2",
+      "valueWei": "0",
+      "gasLimit": "742928",
+      "gasPriceWei": "500000000",
+      "explorerUrl": "https://creditcoin-testnet.blockscout.com/tx/0xee75cffb1e55243487b46c75c667bb46f51831ec004962917ba1e42a15d85812",
+      "blockNumber": 5448049,
+      "gasUsed": "562970",
+      "feeWei": "281485000000000",
+      "confirmedAt": "2026-09-07T19:55:29.766Z",
+      "events": []
+    },
+    "configure": {
+      "hash": "0x192116e0e3e8b129ac570ea0d25f7f9c4fea0c384a2db69fa33c69308150d167",
+      "status": "CONFIRMED",
+      "preparedAt": "2026-09-07T19:56:08.956Z",
+      "nonce": 1,
+      "to": "0x194075d28FedC34D53F095Bac0581368021cfD9a",
+      "dataHash": "0xa4fe2cf89fae9c6ffaa5deb0750317bf659cf228b4ec2a4b5cbcbf81874ac482",
+      "valueWei": "0",
+      "gasLimit": "91928",
+      "gasPriceWei": "500000000",
+      "explorerUrl": "https://creditcoin-testnet.blockscout.com/tx/0x192116e0e3e8b129ac570ea0d25f7f9c4fea0c384a2db69fa33c69308150d167",
+      "blockNumber": 5448052,
+      "gasUsed": "69274",
+      "feeWei": "34637000000000",
+      "confirmedAt": "2026-09-07T19:56:15.299Z",
+      "events": [
+        {
+          "name": "MilestoneConfigured",
+          "args": [
+            "0x27ba7bc8d4463a4de47929238d2a3eed8d2ffb62381a2d665553cb459f3e1a52",
+            "11649780",
+            "0x859a10428e0a6d4d9a69deb1931c3da10b58bede62afeb363ae8607be1dec997"
+          ]
+        }
+      ]
+    },
+    "verify": {
+      "hash": "0x6d4219203e4f69f5c3bc5c8a3507fa7ef5b3c79c0fbb3c7eace01602fb4453d9",
+      "status": "CONFIRMED",
+      "preparedAt": "2026-09-07T19:57:19.361Z",
+      "nonce": 2,
+      "to": "0x194075d28FedC34D53F095Bac0581368021cfD9a",
+      "dataHash": "0x0fbb6edd9536f0c8b8312e96a484c971c84af233505ede7fb917b00b91e99827",
+      "valueWei": "0",
+      "gasLimit": "119977",
+      "gasPriceWei": "500000000",
+      "explorerUrl": "https://creditcoin-testnet.blockscout.com/tx/0x6d4219203e4f69f5c3bc5c8a3507fa7ef5b3c79c0fbb3c7eace01602fb4453d9",
+      "blockNumber": 5448057,
+      "gasUsed": "95868",
+      "feeWei": "47934000000000",
+      "confirmedAt": "2026-09-07T19:57:31.030Z",
+      "events": [
+        {
+          "name": "EvidenceVerified",
+          "args": [
+            "0x27ba7bc8d4463a4de47929238d2a3eed8d2ffb62381a2d665553cb459f3e1a52",
+            "0x3fbe0b8d0d8ef4862c51eae911f1127f8a2d4df98480ed9f2b2f47a958fb1c46",
+            "0x6bF287a1f9D312120FF6BcFCC36442933610Cbe6",
+            "11649780",
+            "0x859a10428e0a6d4d9a69deb1931c3da10b58bede62afeb363ae8607be1dec997"
+          ]
+        }
+      ]
+    }
+  },
+  "provenance": "Existing unrelated public Sepolia benchmark; no source-address ownership, project-work completion or settlement claim.",
+  "limits": {
+    "valueWei": "0",
+    "maximumTotalFeeWei": "10000000000000000",
+    "maximumGasPriceWei": "1000000000"
+  },
+  "bytecodeHash": "0x2f981b359e41d0d745c19172db72a080e0074f32a57c5a7c173901e6732b7ea2",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "evmVersion": "paris",
+  "registry": "0x194075d28FedC34D53F095Bac0581368021cfD9a",
+  "readback": {
+    "checkedAt": "2026-09-07T19:57:50.266Z",
+    "chainId": 102031,
+    "owner": "0x6bF287a1f9D312120FF6BcFCC36442933610Cbe6",
+    "registry": "0x194075d28FedC34D53F095Bac0581368021cfD9a",
+    "bytecodePresent": true,
+    "milestoneId": "0x27ba7bc8d4463a4de47929238d2a3eed8d2ffb62381a2d665553cb459f3e1a52",
+    "sourceHeight": "11649780",
+    "transactionBytesHash": "0x859a10428e0a6d4d9a69deb1931c3da10b58bede62afeb363ae8607be1dec997",
+    "configured": true,
+    "verified": true,
+    "consumedEvidence": true,
+    "replayRejected": true,
+    "blockNumber": 5448058,
+    "explorerUrl": "https://creditcoin-testnet.blockscout.com/address/0x194075d28FedC34D53F095Bac0581368021cfD9a"
+  },
+  "status": "LIVE_TESTNET_VERIFIED"
+}

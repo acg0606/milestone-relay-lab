@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "scope": "PUBLIC_REVIEW_SOURCE",
   "secretPatternMatches": 0,
   "excluded": [
@@ -148,9 +148,64 @@
       "sha256": "caf9530284c2aa968d7b7313ad12b0e553e6ca63d8ca2f60a8f37e3ba227248f"
     },
     {
+      "path": "src/registry-reader.js",
+      "bytes": 3489,
+      "sha256": "5307a6ac0ef7624c2a13bbdfc06db53b96ea5bfd8c88e402fb4bb12b75a1d0f5"
+    },
+    {
+      "path": "test/registry-reader.test.cjs",
+      "bytes": 3000,
+      "sha256": "8e73aee33bea013d889ccafd1e5ed02b6562f051014f12543e867f57255ea77e"
+    },
+    {
+      "path": "evidence/registry-public-config.json",
+      "bytes": 13653,
+      "sha256": "239b3f22f78e88be2cb0760ce081e2dd6581c0504790085d860dc18a702ae89e"
+    },
+    {
+      "path": "evidence/registry-testnet-execution-2026-09-07.json",
+      "bytes": 4375,
+      "sha256": "2eb322de65077e93e225354c278066c0417265b85ce2c575133e49a963f63030"
+    },
+    {
+      "path": "evidence/attestcoin-read-only-receipt-2026-09-07.json",
+      "bytes": 3393,
+      "sha256": "eede0dba2a1dc3074017f76a95396483baa2451397dd0f322c3a813370f2d578"
+    },
+    {
+      "path": "evidence/attestcoin-read-only-proof-2026-09-07.json",
+      "bytes": 5616,
+      "sha256": "99d3260511c8ddc4f9dc212c7ddf40dee273a2bd758eb834f0da5949f1722fa8"
+    },
+    {
+      "path": "docs/registry-testnet-completion.md",
+      "bytes": 2795,
+      "sha256": "5dfe66d3686ca7aec426e21a39fb6888c3f33ea345ac543f93af5c25a72b6e95"
+    },
+    {
+      "path": "web/registry.html",
+      "bytes": 2566,
+      "sha256": "dff0709716387500f17bb51e7f4f37db98aeae93e07102aee77cb62d7e0032c8"
+    },
+    {
+      "path": "web/registry.css",
+      "bytes": 2351,
+      "sha256": "e89b533008c7f3b2fa7ea016a57219467bb241bdcf8947d16494f29d9dfa99ac"
+    },
+    {
+      "path": "web/registry.js",
+      "bytes": 2573,
+      "sha256": "355f59f61ad5ce04c9a989c26c945bfff57bcd195cbc02fa5d9d2596764c7650"
+    },
+    {
+      "path": "web/registry-config.js",
+      "bytes": 13231,
+      "sha256": "ff1fdbde6c3fed9ff89a09ed67df9810688a29917ea1e59295c6170f00a3981e"
+    },
+    {
       "path": "package.json",
-      "bytes": 844,
-      "sha256": "87a81cf2bebefacdc09fecd7ee00b1dd65510048396ece115166fd53386d0c55"
+      "bytes": 991,
+      "sha256": "ae16dc968300421020244b1727cd75a2b9bb1f8c77258d3c18868acd3d067452"
     },
     {
       "path": "verify.cjs",
@@ -159,8 +214,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2542,
-      "sha256": "d100c3a99d590258e6e026467c76031af204dd3653193d14b193f03e0997701e"
+      "bytes": 3073,
+      "sha256": "2d360833397fef3cb10eb88ed049f6dab41f82e107740172e3033848f38a7b6d"
     },
     {
       "path": "compile.cjs",
@@ -171,6 +226,11 @@
       "path": "prepare-testnet-plan.cjs",
       "bytes": 4373,
       "sha256": "82627292fd9f595883eea75854f5b66faeb26c1d4eb53fe3241c471a84f405ed"
+    },
+    {
+      "path": "read-registry.cjs",
+      "bytes": 287,
+      "sha256": "d4ce14df1c7b558147abd845cbede214ce649eb737dc99d10a591326ef440f03"
     }
   ]
 }

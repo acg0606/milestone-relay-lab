@@ -1,12 +1,13 @@
 {
   "name": "milestone-relay-public-review",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "license": "MIT",
-  "description": "Reproducible read-only Attestcoin benchmark with a separate synthetic escrow model",
+  "description": "Deployed Attestcoin evidence registry with a public read-only testnet inspector",
   "scripts": {
-    "check": "node --check src/proof-admission.cjs && node --check verify.cjs",
-    "test": "node --test test/capability.test.cjs test/sdk-offline.test.cjs test/escrow-core.test.cjs test/proof-admission.test.cjs test/registry-contract.test.cjs",
+    "check": "node --check src/proof-admission.cjs && node --check verify.cjs && node --check src/registry-reader.js && node --check web/registry.js",
+    "test": "node --test test/capability.test.cjs test/sdk-offline.test.cjs test/escrow-core.test.cjs test/proof-admission.test.cjs test/registry-contract.test.cjs test/registry-reader.test.cjs",
+    "verify:registry": "node read-registry.cjs",
     "verify:attestcoin": "node verify.cjs",
     "compile:contract": "node compile.cjs",
     "plan:testnet": "node prepare-testnet-plan.cjs"

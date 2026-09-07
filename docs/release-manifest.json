@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "publicationPerformed": false,
   "submissionPerformed": false,
   "files": [
@@ -69,24 +69,74 @@
       "sha256": "cdc3a3dc514edc9175ffe99e9d75958ac45f4efd5109137eb4ff278bfa59c97b"
     },
     {
+      "path": "evidence/attestcoin-read-only-receipt-2026-09-07.json",
+      "bytes": 3393,
+      "sha256": "eede0dba2a1dc3074017f76a95396483baa2451397dd0f322c3a813370f2d578"
+    },
+    {
+      "path": "evidence/attestcoin-read-only-proof-2026-09-07.json",
+      "bytes": 5616,
+      "sha256": "99d3260511c8ddc4f9dc212c7ddf40dee273a2bd758eb834f0da5949f1722fa8"
+    },
+    {
+      "path": "evidence/registry-testnet-execution-2026-09-07.json",
+      "bytes": 4375,
+      "sha256": "2eb322de65077e93e225354c278066c0417265b85ce2c575133e49a963f63030"
+    },
+    {
+      "path": "evidence/registry-public-config.json",
+      "bytes": 13653,
+      "sha256": "239b3f22f78e88be2cb0760ce081e2dd6581c0504790085d860dc18a702ae89e"
+    },
+    {
+      "path": "docs/registry-testnet-completion.md",
+      "bytes": 2795,
+      "sha256": "5dfe66d3686ca7aec426e21a39fb6888c3f33ea345ac543f93af5c25a72b6e95"
+    },
+    {
+      "path": "web/registry.html",
+      "bytes": 2566,
+      "sha256": "dff0709716387500f17bb51e7f4f37db98aeae93e07102aee77cb62d7e0032c8"
+    },
+    {
+      "path": "web/registry.css",
+      "bytes": 2351,
+      "sha256": "e89b533008c7f3b2fa7ea016a57219467bb241bdcf8947d16494f29d9dfa99ac"
+    },
+    {
+      "path": "web/registry.js",
+      "bytes": 2573,
+      "sha256": "355f59f61ad5ce04c9a989c26c945bfff57bcd195cbc02fa5d9d2596764c7650"
+    },
+    {
+      "path": "web/registry-config.js",
+      "bytes": 13231,
+      "sha256": "ff1fdbde6c3fed9ff89a09ed67df9810688a29917ea1e59295c6170f00a3981e"
+    },
+    {
+      "path": "src/registry-reader.js",
+      "bytes": 3489,
+      "sha256": "5307a6ac0ef7624c2a13bbdfc06db53b96ea5bfd8c88e402fb4bb12b75a1d0f5"
+    },
+    {
       "path": "milestone-relay-whitepaper.pdf",
-      "bytes": 8624,
-      "sha256": "2e072761a9d70d75121a356002f07a999e2ff4fe80481ad3c774fcd27b54bc70"
+      "bytes": 8992,
+      "sha256": "f77500f4aee14269469ba3243da08c815b1e6ca61503da0280e0ea543d3b9b66"
     },
     {
       "path": "milestone-relay-demo.webm",
-      "bytes": 3379340,
-      "sha256": "e21b4dabf4392614bf472a82ebc0a9d8b75b02a220e776d2ce57cc74bce45427"
+      "bytes": 736123,
+      "sha256": "3c315728dd94307f8ed1900ceda23abf8278f092c1abb513be3c2695eb0d9ee4"
     },
     {
       "path": "milestone-relay-source.zip",
-      "bytes": 64704,
-      "sha256": "147a85d3c4e32690c95d86cfe37cbaaa30b28a9c7d4290835ce893716cf2b8d7"
+      "bytes": 86898,
+      "sha256": "2d42e8be35a52c6cf7220cb5403a29b2c19c53139d5a50791654f3f6dd86dfaf"
     },
     {
       "path": "index.html",
-      "bytes": 4438,
-      "sha256": "c0dae90968074aaf5d183376b19f68780e40a64e81fede5181b6db0b70d1a817"
+      "bytes": 4454,
+      "sha256": "2393166c0474a4194481dd4acc4480f3294846d5f6dd2669c065dab0cabae858"
     },
     {
       "path": "release.css",
