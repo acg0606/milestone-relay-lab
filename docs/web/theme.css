@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light;
+  --canvas: #f5f7fa;
+  --surface: #ffffff;
+  --surface-subtle: #edf1f6;
+  --ink: #202733;
+  --muted: #536174;
+  --line: #d7dde6;
+  --accent: #254edb;
+  --accent-hover: #1d3db2;
+  --accent-soft: #eaf0ff;
+  --success: #216848;
+  --success-soft: #edf7f0;
+  --warning: #80551f;
+  --warning-soft: #fff4df;
+  --danger: #b3333a;
+  --danger-soft: #fff0f0;
+  --sans: 'Segoe UI Variable Text', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --mono: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace;
+  font-family: var(--sans);
+  background: var(--canvas);
+  color: var(--ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--canvas); color: var(--ink); }
+::selection { color: var(--ink); background: #dce5ff; }
+a { color: var(--accent); text-underline-offset: .22em; }
+a:hover { color: var(--accent-hover); }
+a, button { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}

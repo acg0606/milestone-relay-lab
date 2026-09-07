@@ -94,13 +94,13 @@
     },
     {
       "path": "web/index.html",
-      "bytes": 7833,
-      "sha256": "bb24ca9f5ec4b479c2d5aa67acb0bebb97c9e7d1f455814aca87154ab9737f82"
+      "bytes": 7159,
+      "sha256": "9e08ad9054a40a2e4db49e45034c822eefff25818e1a07f0ade33476224501cb"
     },
     {
       "path": "web/styles.css",
-      "bytes": 15283,
-      "sha256": "67bbbcb453d89464aa60a18ab49d9f8fdbe427578a5d3134cb9b39a025540263"
+      "bytes": 15500,
+      "sha256": "fa555ff3544da3193a2fab3f80b4b3b8c3c5d2cbaff74a498fad81d78a3854dc"
     },
     {
       "path": "web/app.js",
@@ -183,19 +183,29 @@
       "sha256": "5dfe66d3686ca7aec426e21a39fb6888c3f33ea345ac543f93af5c25a72b6e95"
     },
     {
+      "path": "web/theme.css",
+      "bytes": 1372,
+      "sha256": "68c432854db4b39591d5006aa1717d931a2182f8dbfe8d91a2656856af5497ac"
+    },
+    {
+      "path": "web/release.css",
+      "bytes": 3379,
+      "sha256": "d0b58e2f00fb8e91df1fda9593d0c364207db2a2ee003a17b925715b0b6af644"
+    },
+    {
       "path": "web/registry.html",
-      "bytes": 2566,
-      "sha256": "dff0709716387500f17bb51e7f4f37db98aeae93e07102aee77cb62d7e0032c8"
+      "bytes": 4237,
+      "sha256": "4429c8408c9ebf4cf18ffad550247c021ccdd46c1c858061802bc55215141175"
     },
     {
       "path": "web/registry.css",
-      "bytes": 2351,
-      "sha256": "e89b533008c7f3b2fa7ea016a57219467bb241bdcf8947d16494f29d9dfa99ac"
+      "bytes": 7129,
+      "sha256": "8fbdbf5c1196d541a922de41108f8996ca415fbb0f4cf58331ff08d8480c4848"
     },
     {
       "path": "web/registry.js",
-      "bytes": 2573,
-      "sha256": "355f59f61ad5ce04c9a989c26c945bfff57bcd195cbc02fa5d9d2596764c7650"
+      "bytes": 2812,
+      "sha256": "b5f04cb9ce54a7da6d72104987aab7ed27e86d8cc5984e4b97e230d7845f9875"
     },
     {
       "path": "web/registry-config.js",

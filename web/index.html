@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#07110f">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f5f7fa">
   <meta name="description" content="Private offline replay lab for a Cross-Chain Milestone Escrow concept. No wallet, RPC, contract, signature or transaction capability.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2311d89b'/%3E%3Cpath d='M8 17h16M16 9v16' stroke='%2307110f' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/web/theme.css">
   <link rel="stylesheet" href="/web/styles.css">
   <title>Milestone Relay Lab · Offline Replay</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to replay controls</a>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
 
   <header class="site-header">
     <a class="brand" href="#main" aria-label="Milestone Relay Lab home">
@@ -29,7 +28,7 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-copy">
-        <p class="eyebrow">BUIDL CTC 2026 FALL · CONCEPT INCREMENT 0.2</p>
+
         <h1 id="page-title">Cross-Chain<br><em>Milestone Escrow</em></h1>
         <p class="lede">Explore how evidence could trigger a release, dispute or refund through a deterministic state machine. Every balance, event and decision here is a synthetic fixture.</p>
         <div class="hero-badges" aria-label="Prototype boundaries">
@@ -39,7 +38,7 @@
         </div>
       </div>
       <aside class="trust-card" aria-labelledby="trust-title">
-        <p class="card-kicker">Execution boundary</p>
+
         <h2 id="trust-title">Safe by inability</h2>
         <p>This build cannot connect a wallet, call an RPC, deploy a contract, create a signature or submit a transaction.</p>
         <dl>
@@ -53,7 +52,7 @@
     <section class="lab-shell" aria-labelledby="lab-title">
       <div class="lab-heading">
         <div>
-          <p class="section-index">01 / SELECT A BRANCH</p>
+
           <h2 id="lab-title">Replay the decision path</h2>
         </div>
         <p id="scenario-description" class="scenario-description"></p>
@@ -88,7 +87,7 @@
       <div class="workspace-grid">
         <section class="event-panel" aria-labelledby="event-title">
           <div class="panel-heading">
-            <div><p class="section-index">02 / EVENT SPINE</p><h3 id="event-title">Deterministic trace</h3></div>
+            <div><h3 id="event-title">Deterministic trace</h3></div>
             <span id="mode-chip" class="mode-chip">REPLAY</span>
           </div>
           <ol id="event-list" class="event-list" aria-label="Scenario event sequence"></ol>
@@ -102,7 +101,7 @@
 
         <section class="milestone-panel" aria-labelledby="milestone-title">
           <div class="panel-heading">
-            <div><p class="section-index">03 / VALUE CONDITIONS</p><h3 id="milestone-title">Milestones</h3></div>
+            <div><h3 id="milestone-title">Milestones</h3></div>
             <span class="unit-label">u = simulated unit</span>
           </div>
           <div id="milestone-list" class="milestone-list"></div>
@@ -117,7 +116,7 @@
 
     <section class="receipt-section" aria-labelledby="receipt-title">
       <div class="receipt-copy">
-        <p class="section-index">04 / AUDITABLE OUTPUT</p>
+
         <h2 id="receipt-title">A receipt that says what did <em>not</em> happen.</h2>
         <p>The fingerprint identifies this ordered local trace. It is not a transaction hash, blockchain proof or signature.</p>
       </div>
@@ -134,7 +133,7 @@
 
     <section class="future-gate" aria-labelledby="future-title">
       <div class="gate-icon" aria-hidden="true">G</div>
-      <div><p class="section-index">HUMAN GATE REQUIRED</p><h2 id="future-title">Future testnet integration stays locked</h2></div>
+      <div><h2 id="future-title">Future testnet integration stays locked</h2></div>
       <p>A dedicated empty testnet wallet, confirmed official addresses, source-chain support, faucet assets and explicit owner approval are prerequisites. This replay does none of those actions.</p>
     </section>
   </main>

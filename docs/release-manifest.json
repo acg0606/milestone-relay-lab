@@ -5,13 +5,13 @@
   "files": [
     {
       "path": "web/index.html",
-      "bytes": 7827,
-      "sha256": "14d4591ebec595f9f5fea2a3c3d224fbe572a3ac6532b619184065f9b099998b"
+      "bytes": 7148,
+      "sha256": "b65eacf650caf45e89df9f0d41b0181586b747bc3b049cd7574accce3500b45d"
     },
     {
       "path": "web/styles.css",
-      "bytes": 15283,
-      "sha256": "67bbbcb453d89464aa60a18ab49d9f8fdbe427578a5d3134cb9b39a025540263"
+      "bytes": 15500,
+      "sha256": "fa555ff3544da3193a2fab3f80b4b3b8c3c5d2cbaff74a498fad81d78a3854dc"
     },
     {
       "path": "web/app.js",
@@ -94,19 +94,24 @@
       "sha256": "5dfe66d3686ca7aec426e21a39fb6888c3f33ea345ac543f93af5c25a72b6e95"
     },
     {
+      "path": "web/theme.css",
+      "bytes": 1372,
+      "sha256": "68c432854db4b39591d5006aa1717d931a2182f8dbfe8d91a2656856af5497ac"
+    },
+    {
       "path": "web/registry.html",
-      "bytes": 2566,
-      "sha256": "dff0709716387500f17bb51e7f4f37db98aeae93e07102aee77cb62d7e0032c8"
+      "bytes": 4237,
+      "sha256": "4429c8408c9ebf4cf18ffad550247c021ccdd46c1c858061802bc55215141175"
     },
     {
       "path": "web/registry.css",
-      "bytes": 2351,
-      "sha256": "e89b533008c7f3b2fa7ea016a57219467bb241bdcf8947d16494f29d9dfa99ac"
+      "bytes": 7129,
+      "sha256": "8fbdbf5c1196d541a922de41108f8996ca415fbb0f4cf58331ff08d8480c4848"
     },
     {
       "path": "web/registry.js",
-      "bytes": 2573,
-      "sha256": "355f59f61ad5ce04c9a989c26c945bfff57bcd195cbc02fa5d9d2596764c7650"
+      "bytes": 2812,
+      "sha256": "b5f04cb9ce54a7da6d72104987aab7ed27e86d8cc5984e4b97e230d7845f9875"
     },
     {
       "path": "web/registry-config.js",
@@ -125,23 +130,23 @@
     },
     {
       "path": "milestone-relay-demo.webm",
-      "bytes": 1814502,
-      "sha256": "5319e673ee21d1831773ab9e0bf3e2f854fd60f1262049d9963181c3c7f11d49"
+      "bytes": 1741875,
+      "sha256": "66deba8a5edd6beed2d1a4f8406678286e69b57a43f26e4d10e48b4c471d58b2"
     },
     {
       "path": "milestone-relay-source.zip",
-      "bytes": 86898,
-      "sha256": "2d42e8be35a52c6cf7220cb5403a29b2c19c53139d5a50791654f3f6dd86dfaf"
+      "bytes": 89536,
+      "sha256": "8d167c55fedbece1c9d4c68fd5312c0cd3439d2c39e2e9502ba9bc587f7d6dc8"
     },
     {
       "path": "index.html",
-      "bytes": 4454,
-      "sha256": "2393166c0474a4194481dd4acc4480f3294846d5f6dd2669c065dab0cabae858"
+      "bytes": 4200,
+      "sha256": "cd2e3d414aa889951785992897351c97147fe4c2c97669509e458f902b62db72"
     },
     {
       "path": "release.css",
-      "bytes": 2459,
-      "sha256": "2d37018b6ed6a3a74229f42e7493b061f35660ddaa8ec639808592947383bde9"
+      "bytes": 3379,
+      "sha256": "d0b58e2f00fb8e91df1fda9593d0c364207db2a2ee003a17b925715b0b6af644"
     }
   ]
 }
